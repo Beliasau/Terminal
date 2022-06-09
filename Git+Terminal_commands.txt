@@ -1,6 +1,6 @@
 Beliasau
 
-Команды в Git Bash консоли 
+Команды в Git Bash консоли 			https://git-scm.com/book/ru/
 
 
 
@@ -308,6 +308,7 @@ git cat-file -t
 git cat-file -p
 
 git add
+git rm
 
 git fetch
 
