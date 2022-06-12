@@ -1,0 +1,54 @@
+git init — создание новых репозиториев; 
+
+git clone <remoteURL> — клонирование удаленного репозитория;
+
+git status
+
+git commit --amend — изменение последнего коммита;
+
+git log — просмотр истории коммитов;
+
+git branch <branch> — создание новой ветки;
+
+git branch –d <branch> — удаление ветки;
+
+git checkout
+
+git stash
+
+git cat-file -t
+
+git cat-file -p
+
+git add
+git rm
+
+git fetch
+
+git merge <branch> — слияние веток;
+
+git merge --abort
+
+git push <remote> <branch> — отправка ветки на удаленный сервер;
+
+git push <remote> :<branch> — удаление ветки на удаленном сервере;
+
+git tag — просмотр меток;
+
+git push <remote> <tag> — обмен метками;
+
+git remote — отображение удаленных репозиториев;
+
+git pull <remote> <branch> — получение данных из удаленного репозитория и слияние с локальным;
+
+git push <remote> <branch> — отправка локальных изменений на удаленный сервер. 
+
+git diff
+
+git config
+
+git show
+
+git blame
+
+ssh keygen -t rsa -c 
