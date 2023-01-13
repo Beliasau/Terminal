@@ -1,2 +1,2 @@
-# Git
-my homework on the course V.Ksendzov
+# Terminal
+##my homework on the course V.Ksendzov
