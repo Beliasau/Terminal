@@ -1,2 +1,2 @@
 # Terminal
-# my homework on the course V.Ksendzov
+ my homework on the course V.Ksendzov
