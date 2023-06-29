@@ -130,10 +130,11 @@ cat > tF_4.txt
 	(Ctrl+C)
 	
 
-
+seq 15 | cat >> tf_4.txt
 
 seq 15 | xargs -Iz echo "This line z" >tf_4.txt
  
+
 
 
 15. Сделать текстовый файл tF_5.txt в котором будет 13 строк.
@@ -153,6 +154,11 @@ cat > tF_5.txt
 12
 13
 	(Ctrl+C)
+
+
+seq 13 | cat >> tF_5.txt
+
+
 
 
  
@@ -320,40 +326,52 @@ cat > tF_5.txt
 
  36. Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”
 
-	for A in `grep -r -l sec`; do mv "$A" FolderName; done
 
+	grep -r -l sec | xargs -I{} mv {} FolderName
+
+
+
+	for A in `grep -r -l sec`; do mv "$A" FolderName; done
 	grep -r -l sec | while read A; do mv "$A" FolderName; done
 
- 	grep -r -l sec | xargs -I{} mv{} FolderName
 
  
 37. Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”
 
 
+	grep -r -l sec | xargs -I{} cp {} FolderName
+
+
+
 	for A in `grep -r -l sec`; do mkdir FolderName; cp "$A" FolderName; done
-	
 	grep -r -l sec | while read A; do mkdir FolderName; cp "$A" FolderName; done
 	
-	grep -r -l sec | xargs -I{} cp{} FolderName
 
 
  38. Команда в одну строку. Найти все строки c “sec” во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл.
 
-	
-	for A in `grep -r -h sec`; do echo "$A" >> FileName.txt; done    (каждое слово в созданном файле с новой строки!?)
- 
-	grep -r -h sec > FileName.txt
+	grep -nr sec | cat >> grep.txt
 
+
+
+	for A in `grep -r -h sec`; do echo "$A" >> FileName.txt; done    (каждое слово в созданном файле с новой строки!?)
+	grep -r -h sec > FileName.txt
 	grep -r -h sec | xargs >> newF.txt
+
+
+
 
  39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово “sec”
 
+	grep -lr sec | xargs rm
+
 
 	for A in `grep -r -l sec`; do rm "$A"; done
-
 	grep -r -l sec | while read A; do rm "$A"; done
-
  	grep -r -l sec | xargs -I{} rm {}
+
+
+
 
 40. Просто вывести в терминал строку “Good job!!”
 
