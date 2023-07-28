@@ -1,4 +1,4 @@
-Termial. HW_2				Beliasau			@Grizzly_white
+Termial. HW_2				Beliasau				@Grizzly_white
 
 
 1. Сделать папку dir_1
