@@ -1,4 +1,4 @@
-Terminal HW_1               Beliasau			    @Grizzly_white
+Terminal HW_1              Beliasau			    @Grizzly_white
 
 Linux terminal (GitBash) commands
 
