@@ -4,4 +4,4 @@ my homework on the course V.Ksendzov
 
 ## My Certificate
 
-![My Certificate](https://drive.google.com/file/d/17OpmT1Gi69BlNORaPVDhJF_ERaKnUTNI/view?usp=sharing)
+![My Certificate](https://raw.githubusercontent.com/Beliasau/Terminal/main/Aliaksandr%20Beliasau_Terminal.png)
